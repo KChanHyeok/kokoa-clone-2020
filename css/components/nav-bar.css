@@ -1,10 +1,28 @@
-.nav{
-    background-color: #f9f9fa;
-    padding: 20px 40px;
+.nav {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #f9f9fa;
+  padding: 20px 50px;
+  box-sizing: border-box; /*padding이 추가 됨으로써 기존의 box의 사이즈가 작아져도 상관없다*/
+  border-top: 1px solid rgba(121, 121, 121, 0.3);
 }
 
-.nav__list{
-    display: flex;
-    justify-content: space-between;
-    
+.nav__list {
+  display: flex;
+  justify-content: space-between;
+}
+.nav__link {
+  color: #2e363e;
+  position: relative;
+}
+.nav__alarm {
+  display: flex;
+  position: fixed;
+  position: absolute;
+}
+.nav__notification {
+  position: absolute;
+  left: 15px;
+  bottom: 15px;
 }
